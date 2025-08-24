@@ -1,0 +1,32 @@
+{
+  "name": "customfigmamcp",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "mcp": "node dist/server.js",
+    "analyze": "node dist/analyze.js",
+    "analyze:components": "node dist/analyze_components.js",
+    "analyze:ui": "node dist/analyze_ui_components.js"
+    ,
+    "inspect:buttons": "node dist/inspect_buttons.js",
+    "inspect:cards": "node dist/inspect_cards.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.2",
+    "zod": "^3.25.76"
+  },
+  "type": "module"
+}
